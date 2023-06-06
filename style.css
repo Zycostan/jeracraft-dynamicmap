@@ -1,0 +1,27 @@
+.claim-marker {
+  position: absolute;
+  width: 20px; /* Increase the width of the claim markers */
+  height: 20px; /* Increase the height of the claim markers */
+  transform: translate(-50%, -50%);
+  border-radius: 3px; /* Apply a slight border radius to make them appear rounded */
+  background-color: rgba(255, 0, 0, 0.5); /* Set the background color to semi-transparent red */
+  cursor: pointer; /* Add a pointer cursor when hovering over the claim markers */
+}
+
+.claim-marker span {
+  display: none; /* Hide the nation name by default */
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.claim-marker:hover span {
+  display: block; /* Show the nation name when hovering on the claim marker */
+}
